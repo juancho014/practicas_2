@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('./partials/meta')%>
+</head>
+<body class="body1">
+    <%-include('./partials/headers')%>
+    <h1>ecommerce ejs</h1>
+    
+    <% JSONProducts.forEach(product =>{ %>
+        <h3><%= product.title %></h3>
+        <h2><%= product.price %></h2>
+        <h4><%= product.category %></h4>
+    <%}) %>
+    
+</body>
+</html>
